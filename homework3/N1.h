@@ -1,2 +1,2 @@
 #pragma once
-int n1(int s, int n, int p);
+double n1(double s, double n, double p);
