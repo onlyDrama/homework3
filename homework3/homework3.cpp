@@ -2,6 +2,10 @@
 #include "N2.h"
 #include <iostream>
 #include <cmath>
+#include <fstream>
+
+
+
 using namespace std;
 
 int main()
@@ -60,9 +64,37 @@ int main()
 			}
 
 		}
+
+
 		if (n == 3)
 		{
-
+			cout << "Working on that case" << endl;
+		}
+		if (n == 4)
+		{
+			/*
+			ifstream fin("txt.txt");
+			if (!fin)
+			{
+				cout << "ERROR" << endl;
+			}
+			else
+			{
+				for (int i = 0; i < 10; i++)
+				{
+					int n[90];
+					fin >> n[i];
+					if (int(n[i]))
+					{
+						cout << n[i] << endl;
+					}
+				}
+			}
+			*/
+			if (n == 5)
+			{
+				break;
+			}
 		}
 	}
 	return 0;
