@@ -1,7 +1,9 @@
 #include <math.h>
+#include "ERRORCONST.h"
+
 double n1(double s, double n, double p) // s - Займ, m - месячная выплата, n - количество месяцев , p - процент
 {
-	n = n / 12;
+	n = (n / 12);
 
 	double r = p / 100;
 	
@@ -12,6 +14,6 @@ double n1(double s, double n, double p) // s - Займ, m - месячная выплата, n - к
 	}
 	else
 	{
-		return 404;
+		return ERRORCONST;
 	}
 }

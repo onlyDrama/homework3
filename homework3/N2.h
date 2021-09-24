@@ -1,2 +1,2 @@
 #pragma once
-int n2(double s, double n, double m);
+double n2(double s, double n, double m);

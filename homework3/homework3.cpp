@@ -3,33 +3,34 @@
 #include <iostream>
 #include <cmath>
 #include <fstream>
-
-
+#include "ErrorL.h"
+#include "ERRORCONST.h"
 
 using namespace std;
 
 int main()
 {
 	setlocale(LC_ALL, "ru");
-
+	cout << getError_with_recomendation(2);
 	int n = 1000;
 	cout << "0 - Конец программы" << endl;
 	while (n != 0)
 	{
 		cin >> n;
+
 		if (n == 1)
 		{
 			double s, n, p;
 			cout << "Задание 1" << endl;
-			cout << "Введите s: " << endl;
+			cout << "Введите s - Сумма кредита : " << endl;
 			cin >> s;
-			cout << "Введите n: " << endl;
+			cout << "Введите n - количество месяцев : " << endl;
 			cin >> n;
-			cout << "Введите p: " << endl;
+			cout << "Введите p - %: " << endl;
 			cin >> p;
-			if (n1(s, n, p) == 404)
+			if (n1(s, n, p) == ERRORCONST)
 			{
-				cout << "Скоро тут будет функция, вызывающая ошибку, взятая из другого проекта" << endl;
+				cout << getError();
 			}
 			else
 			{
@@ -54,13 +55,13 @@ int main()
 			cout << "m : ";
 			cin >> m;
 			cout << endl;
-			if (n2(s, n, m) == 404)
+			if (n2(s, n, m) == ERRORCONST)
 			{
-				cout << "Ошибка точно скоро будет" << endl;
+				cout << getError();
 			}
 			else
 			{
-				cout << "Результат : " << n2(s, n, m) << endl;
+				cout << "Результат : " << n2(s, n, m) << " %" << endl;
 			}
 
 		}
