@@ -151,14 +151,23 @@
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="BubbleSort.cpp" />
+    <ClCompile Include="Copyfile.cpp" />
     <ClCompile Include="homework3.cpp" />
     <ClCompile Include="N1.cpp" />
     <ClCompile Include="N2.cpp" />
+    <ClCompile Include="N4.cpp" />
+    <ClCompile Include="N5.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ALF.h" />
+    <ClInclude Include="BubbleSort.h" />
+    <ClInclude Include="Copyfile.h" />
     <ClInclude Include="ERRORCONST.h" />
     <ClInclude Include="N1.h" />
     <ClInclude Include="N2.h" />
+    <ClInclude Include="N4.h" />
+    <ClInclude Include="N5.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="txt.txt" />
